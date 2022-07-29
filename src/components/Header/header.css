@@ -1,0 +1,39 @@
+.container__header {
+	height: 5.7rem;
+	padding: 1.5rem;
+	background: var(--color-bg-header);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__logo {
+	display: flex;
+	align-items: center;
+}
+.header__logo-img {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+.header__title {
+	font-size: 1.4rem;
+	color: var(--color-primary);
+	font-family: var(--inter-font);
+	font-weight: 700;
+	margin-left: 0.5rem;
+}
+.header__subtitle {
+	color: var(--color-light);
+	font-family: var(--inter-font);
+	font-weight: 600;
+}
+
+/*======================= MEDIA QUERIES (SMALL DEVICES) =======================*/
+
+@media screen and (max-width: 600px) {
+	.header__subtitle {
+		display: none;
+	}
+	.header__logo {
+		margin: 0 auto;
+	}
+}
