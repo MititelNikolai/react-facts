@@ -1,9 +1,15 @@
 import React from 'react'
 import './main.css'
 import Ellipse from '../../assets/ellipse.svg'
+import ReactIcon from '../../assets/reactjs-icon.svg'
 const Main = () => {
 	return (
 		<section className='container container__main'>
+			<img
+				className='main__bg-image'
+				src={ReactIcon}
+				alt='React Main Icon'
+			></img>
 			<div className='main'>
 				<h2 className='main__title'>Fun facts about React</h2>
 			</div>

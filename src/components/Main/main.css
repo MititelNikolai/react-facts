@@ -1,6 +1,12 @@
 .container__main {
 	background-color: var(--color-bg-variant);
 	height: calc(100vh - 5.7rem);
+	position: relative;
+}
+.container__main .main__bg-image {
+	position: absolute;
+	right: 0;
+	top: 6.7rem;
 }
 .main {
 	padding-left: 1.7rem;
@@ -42,5 +48,10 @@
 	}
 	.main__list {
 		padding: 1.9rem;
+		position: relative;
+		z-index: 1;
+	}
+	.container__main .main__bg-image {
+		z-index: 0;
 	}
 }
